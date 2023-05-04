@@ -1,0 +1,21 @@
+{
+	// ESLint
+	"eslint.enable": true,
+	"eslint.packageManager": "yarn",
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+	"eslint.lintTask.enable": true,
+	"eslint.workingDirectories": [
+		{ "directory": "./packages/language-server-ruby", "changeProcessCWD": true },
+		{ "directory": "./packages/vscode-ruby-client", "changeProcessCWD": true },
+		{ "directory": "./packages/vscode-ruby-common", "changeProcessCWD": true },
+		{ "directory": "./packages/vscode-ruby-debugger", "changeProcessCWD": true }
+	],
+
+	// Format with Prettier
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.includeLanguages": {"html.erb": "html", "erb": "html"}
+}
